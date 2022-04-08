@@ -1,5 +1,6 @@
 import os.path
 
+import uvicorn
 from fastapi import FastAPI, Depends, Request, HTTPException
 from sqlalchemy.orm import Session
 from fastapi.responses import FileResponse
@@ -156,3 +157,7 @@ def get_user(username: str, db: Session):
 def update_user_token(user: User, db: Session):
     db.query(User).filter(User.username == user.username).update({User.token: user.token})
     db.close()
+
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", port=8000, reload=False)
