@@ -1,6 +1,6 @@
-GET http://localhost:8000/api/assets/treasure.png
+GET http://0.0.0.0:8080/api/assets/treasure.png
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDkzOTU4ODEsImlhdCI6MTY0OTM5MjI4MSwic3ViIjoicHl0aG9uIn0.6oUCc_5mFGV46CfvGGKbb1p602jcQcJdr6jmnIdLYOg
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDk0MDAxMTUsImlhdCI6MTY0OTM5NjUxNSwic3ViIjoicHl0aG9uIn0.O4WS2Gbs-naNP7mXp2yZB8q9YMLnIYPw0L5PSiUkMlY
 
 {
   "username": "python",
@@ -17,7 +17,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDkzODIzN
   "password": "python3"
 }
 ###
-POST http://localhost:8000/api/register
+POST http://0.0.0.0:8080/api/register
 Content-Type: application/json
 
 {

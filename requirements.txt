@@ -1,5 +1,6 @@
 PyJWT~=2.3.0
 bcrypt~=3.2.0
 fastapi~=0.75.1
+uvicorn~=0.17.6
 SQLAlchemy~=1.4.35
 pydantic~=1.9.0
