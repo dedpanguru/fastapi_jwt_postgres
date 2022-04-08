@@ -1,0 +1,37 @@
+GET http://localhost:8000/api/assets/treasure.png
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDkzOTU4ODEsImlhdCI6MTY0OTM5MjI4MSwic3ViIjoicHl0aG9uIn0.6oUCc_5mFGV46CfvGGKbb1p602jcQcJdr6jmnIdLYOg
+
+{
+  "username": "python",
+  "password": "python"
+}
+
+###
+POST http://localhost:8000/api/logout
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDkzODIzNDMsImlhdCI6MTY0OTM3ODc0Mywic3ViIjoicHl0aG9uMyJ9.5NwR__bPY8If_OkfAjQEwABWL4XkDUvt25xfy1e_HjY
+
+{
+  "username": "python3",
+  "password": "python3"
+}
+###
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+  "username": "python",
+  "password": "python"
+}
+
+###
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+  "username": "python1",
+  "password": "python1"
+}
+
+###
