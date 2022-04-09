@@ -1,37 +1,34 @@
-GET http://0.0.0.0:8080/api/assets/treasure.png
+GET http://localhost:8080/api/assets/treasure.png
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDk0MDAxMTUsImlhdCI6MTY0OTM5NjUxNSwic3ViIjoicHl0aG9uIn0.O4WS2Gbs-naNP7mXp2yZB8q9YMLnIYPw0L5PSiUkMlY
-
-{
-  "username": "python",
-  "password": "python"
-}
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDk0OTA5MDIsImlhdCI6MTY0OTQ4NzMwMiwic3ViIjoicHkifQ.xEPyGT6z2mc1C98dvKFUOysUWtIlq_E3n2QgdeSsoW8
 
 ###
-POST http://localhost:8000/api/logout
+POST http://localhost:8080/api/logout
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDkzODIzNDMsImlhdCI6MTY0OTM3ODc0Mywic3ViIjoicHl0aG9uMyJ9.5NwR__bPY8If_OkfAjQEwABWL4XkDUvt25xfy1e_HjY
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDk0OTA5MDIsImlhdCI6MTY0OTQ4NzMwMiwic3ViIjoicHkifQ.xEPyGT6z2mc1C98dvKFUOysUWtIlq_E3n2QgdeSsoW8
 
 {
-  "username": "python3",
-  "password": "python3"
+  "username": "py",
+  "password": "python1"
 }
 ###
-POST http://0.0.0.0:8080/api/register
+POST http://localhost:8080/api/register
 Content-Type: application/json
 
 {
-  "username": "python",
-  "password": "python"
-}
-
-###
-POST http://localhost:8000/api/login
-Content-Type: application/json
-
-{
-  "username": "python1",
+  "username": "py",
   "password": "python1"
 }
 
 ###
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "py",
+  "password": "python1"
+}
+
+###
+
+GET http://127.0.0.1:8080/docs

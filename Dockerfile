@@ -2,14 +2,14 @@ FROM python:3.10-slim
 
 RUN mkdir "app"
 
-COPY requirements.txt /app
+COPY ./src /app/src
 
-COPY . /app
+COPY ./requirements.txt /app
 
 WORKDIR /app
 
-RUN pip install psycopg2-binary
-
 RUN pip install -r requirements.txt
 
-CMD ["uvicorn", "main:app", "--host=0.0.0.0"]
+RUN pip install psycopg2-binary
+
+CMD ["uvicorn", "src.main:app", "--port=8080", "--host=0.0.0.0"]
