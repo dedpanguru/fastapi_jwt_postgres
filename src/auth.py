@@ -31,6 +31,8 @@ class AuthHandler:
 
     def validate_token(self, token: str):
         try:
+            if not len(token):
+                raise jwt.InvalidTokenError
             jwt.decode(token.encode(), self.secret, algorithms=['HS256'], options={'verify_exp': True})
             return token
         except jwt.ExpiredSignatureError:
